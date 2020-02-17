@@ -1,4 +1,4 @@
-# d3-chess-count
+# d3-chessboard-count
 
 Plot per-square frequencies on a chessboard.  The frequencies are represented by circles —
 the higher the frequency, the larger the circle, scaled such that the circle representing
@@ -18,18 +18,18 @@ Changes to the data are animated, and the board can be customized, including:
 
 ## Installation
 
-If you use NPM, `npm install d3-chess-count`. Otherwise, download the 
-[latest release](https://github.com/chrka/d3-chess-count/releases/latest). 
+If you use NPM, `npm install d3-chessboard-count`. Otherwise, download the 
+[latest release](https://github.com/chrka/d3-chessboard-count/releases/latest). 
 
 You can also load directly from directly [unpkg.com](https://unpkg.com) as a 
-[standalone library](https://unpkg.com/d3-chess-count/umd/d3-chess-count.min.js), or
+[standalone library](https://unpkg.com/d3-chessboard-count/umd/d3-chessboard-count.min.js), or
 from [jsdelivr.com](https://www.jsdelivr.com) 
-[here](https://cdn.jsdelivr.net/npm/d3-chess-count/dist/d3-chess-count.min.js).
+[here](https://cdn.jsdelivr.net/npm/d3-chessboard-count/dist/d3-chessboard-count.min.js).
 
 AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
 
 ```html
-<script src="https://unpkg.org/d3-chess-count/umd/d3-chess-count.v1.min.js"></script>
+<script src="https://unpkg.org/d3-chessboard-count/umd/d3-chessboard-count.v1.min.js"></script>
 <script>
     const plot = d3.chessboardSquarePlot();
 </script>
@@ -71,7 +71,7 @@ After configuring the plot object, select the `div`, set your data, and apply th
 
 
 ### Creating Plots
-<a name="chessboardSquarePlot" href="#chessboardSquarePlot">#</a> d3.<b>chessboardSquarePlot</b>() [<>](https://github.com/chrka/d3-chess-count/blob/master/src/index.ts#L107 "Source")
+<a name="chessboardSquarePlot" href="#chessboardSquarePlot">#</a> d3.<b>chessboardSquarePlot</b>() [<>](https://github.com/chrka/d3-chessboard-count/blob/master/src/index.ts#L107 "Source")
 
 Constructs a new plot with top/right/bottom/left margins of 24, square size of 32,
 padding of 4, no mirroring, 8 files and ranks ('a'–'h', '1'–'8'), `white` light squares,

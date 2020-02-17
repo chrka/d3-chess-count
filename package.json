@@ -1,5 +1,5 @@
 {
-  "name": "d3-chess-count",
+  "name": "d3-chessboard-count",
   "version": "0.1.0",
   "description": "Square statistics displayed as disks on a chessboard using D3",
   "keywords": [
@@ -10,10 +10,10 @@
     "svg",
     "chess"
   ],
-  "homepage": "https://github.com/chrka/d3-chess-count",
+  "homepage": "https://github.com/chrka/d3-chessboard-count",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrka/d3-chess-count.git"
+    "url": "https://github.com/chrka/d3-chessboard-count.git"
   },
   "author": {
     "name": "Christoffer Karlsson",
@@ -24,9 +24,9 @@
     "dist/**/*.js",
     "src/**/*.ts"
   ],
-  "main": "dist/d3-chess-count.js",
-  "unpkg": "dist/d3-chess-count.min.js",
-  "jsdelivr": "dist/d3-chess-count.min.js",
+  "main": "dist/d3-chessboard-count.js",
+  "unpkg": "dist/d3-chessboard-count.min.js",
+  "jsdelivr": "dist/d3-chessboard-count.min.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
