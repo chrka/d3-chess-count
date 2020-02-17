@@ -29,7 +29,7 @@ from [jsdelivr.com](https://www.jsdelivr.com)
 AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
 
 ```html
-<script src="https://unpkg.org/d3-chessboard-count/umd/d3-chessboard-count.v1.min.js"></script>
+<script src="https://unpkg.org/d3-chessboard-count/umd/d3-chessboard-count.min.js"></script>
 <script>
     const plot = d3.chessboardSquarePlot();
 </script>
