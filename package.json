@@ -20,6 +20,10 @@
     "url": "http://chrka.dev"
   },
   "license": "MIT",
+  "files": [
+    "dist/**/*.js",
+    "src/**/*.ts"
+  ],
   "main": "dist/d3-chess-count.js",
   "unpkg": "dist/d3-chess-count.min.js",
   "jsdelivr": "dist/d3-chess-count.min.js",
