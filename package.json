@@ -1,0 +1,53 @@
+{
+  "name": "d3-chess-count",
+  "version": "0.0.1",
+  "description": "Square statistics displayed as disks on a chessboard using D3",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "graphics",
+    "visualization",
+    "svg",
+    "chess"
+  ],
+  "homepage": "https://github.com/chrka/d3-chess-count",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrka/d3-chess-count.git"
+  },
+  "author": {
+    "name": "Christoffer Karlsson",
+    "url": "http://chrka.dev"
+  },
+  "license": "MIT",
+  "main": "dist/d3-chess-count.js",
+  "unpkg": "dist/d3-chess-count.min.js",
+  "jsdelivr": "dist/d3-chess-count.min.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "devDependencies": {
+    "rollup": "^1.31.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/d3-array": "^2.0.0",
+    "@types/d3-axis": "^1.0.12",
+    "@types/d3-scale": "^2.1.1",
+    "@types/d3-selection": "^1.4.1",
+    "@types/d3-shape": "^1.3.2",
+    "@types/d3-transition": "^1.1.6",
+    "d3-array": "^2.4.0",
+    "d3-axis": "^1.0.12",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.1",
+    "d3-shape": "^1.3.7",
+    "d3-transition": "^1.3.2"
+  }
+}
