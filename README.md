@@ -4,7 +4,7 @@ Plot per-square frequencies on a chessboard.  The frequencies are represented by
 the higher the frequency, the larger the circle, scaled such that the circle representing
 the highest overall frequency takes up the full space of its square minus padding.
 
-<img src="img/board.png" alt="example board image" width="296px" height="296px"></img>
+<img src="https://github.com/chrka/d3-chessboard-count/raw/master/img/board.png" alt="example board image" width="296px" height="296px"></img>
 
 Changes to the data are animated, and the board can be customized, including:
 
@@ -22,14 +22,14 @@ If you use NPM, `npm install d3-chessboard-count`. Otherwise, download the
 [latest release](https://github.com/chrka/d3-chessboard-count/releases/latest). 
 
 You can also load directly from directly [unpkg.com](https://unpkg.com) as a 
-[standalone library](https://unpkg.com/d3-chessboard-count/umd/d3-chessboard-count.min.js), or
+[standalone library](https://unpkg.com/d3-chessboard-count/dist/d3-chessboard-count.min.js), or
 from [jsdelivr.com](https://www.jsdelivr.com) 
 [here](https://cdn.jsdelivr.net/npm/d3-chessboard-count/dist/d3-chessboard-count.min.js).
 
 AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
 
 ```html
-<script src="https://unpkg.org/d3-chessboard-count/umd/d3-chessboard-count.min.js"></script>
+<script src="https://unpkg.com/d3-chessboard-count/dist/d3-chessboard-count.min.js"></script>
 <script>
     const plot = d3.chessboardSquarePlot();
 </script>

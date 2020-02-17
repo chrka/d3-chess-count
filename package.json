@@ -1,6 +1,6 @@
 {
   "name": "d3-chessboard-count",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Square statistics displayed as disks on a chessboard using D3",
   "keywords": [
     "d3",
