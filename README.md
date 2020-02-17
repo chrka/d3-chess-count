@@ -22,7 +22,7 @@ If you use NPM, `npm install d3-chess-count`. Otherwise, download the
 [latest release](https://github.com/chrka/d3-chess-count/releases/latest). 
 
 You can also load directly from directly [unpkg.com](https://unpkg.com) as a 
-[standalone library](https://unpkg.com/d3-chess-count/umd/d3-chess-count.v1.min.js), or
+[standalone library](https://unpkg.com/d3-chess-count/umd/d3-chess-count.min.js), or
 from [jsdelivr.com](https://www.jsdelivr.com) 
 [here](https://cdn.jsdelivr.net/npm/d3-chess-count/dist/d3-chess-count.min.js).
 
