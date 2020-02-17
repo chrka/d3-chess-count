@@ -81,19 +81,19 @@ padding of 4, no mirroring, 8 files and ranks ('a'–'h', '1'–'8'), `white` li
 
 ### Accessors
 
-<a name="plot_file" href="plot_file">#</a> <i>plot</i>.<b>file</b>([<i>file</i>])
+<a name="plot_file" href="#plot_file">#</a> <i>plot</i>.<b>file</b>([<i>file</i>])
 
 If _file_ is specified, sets the file accessor to the specified function and returns this plot generator.
 If _file_ is not specified, returns the current file accessor which defaults to a function returning 
 the `file` property if available, or 0 otherwise. 
 
-<a name="plot_rank" href="plot_rank">#</a> <i>plot</i>.<b>rank</b>([<i>rank</i>])
+<a name="plot_rank" href="#plot_rank">#</a> <i>plot</i>.<b>rank</b>([<i>rank</i>])
 
 If _rank_ is specified, sets the file accessor to the specified function and returns this plot generator.
 If _rank_ is not specified, returns the current rank accessor which defaults to a function returning 
 the `file` property if available, or 0 otherwise. 
 
-<a name="plot_rank" href="plot_rank">#</a> <i>plot</i>.<b>count</b>([<i>count</i>])
+<a name="plot_rank" href="#plot_rank">#</a> <i>plot</i>.<b>count</b>([<i>count</i>])
 
 If _count_ is specified, sets the count accessor to the specified function and returns this plot generator.
 If _count_ is not specified, returns the current count accessor which defaults to a function returning 
@@ -102,19 +102,19 @@ the `count` property if available, or 0 otherwise.
 
 ### Geometry
 
-<a name="plot_margins" href="plot_margins">#</a> <i>plot</i>.<b>margins</b>([<i>margins</i>])
+<a name="plot_margins" href="#plot_margins">#</a> <i>plot</i>.<b>margins</b>([<i>margins</i>])
 
 If _margins_ is specified, sets the margins to the specified object.
 If _margins_ is not specified, returns the current margins which defaults to `{top: 24, left: 24, bottom: 24, right: 24}`.
 
 The margins define the empty space around the chessboard.
 
-<a name="plot_squareSize" href="plot_squareSize">#</a> <i>plot</i>.<b>squareSize</b>([<i>squareSize</i>])
+<a name="plot_squareSize" href="#plot_squareSize">#</a> <i>plot</i>.<b>squareSize</b>([<i>squareSize</i>])
 
 If _squareSize_ is specified, sets the square size to the specified number.
 If _squareSize_ is not specified, returns the current square size which defaults to 32.
 
-<a name="plot_padding" href="plot_padding">#</a> <i>plot</i>.<b>padding</b>([<i>padding</i>])
+<a name="plot_padding" href="#plot_padding">#</a> <i>plot</i>.<b>padding</b>([<i>padding</i>])
 
 If _padding_ is specified, sets the padding to the specified number.
 If _padding_ is not specified, returns the current padding which defaults to 4.
@@ -125,22 +125,22 @@ circle with the maximum radius in the plot.
 
 ### Files and Ranks
 
-<a name="plot_files" href="plot_files">#</a> <i>plot</i>.<b>files</b>([<i>files</i>])
+<a name="plot_files" href="#plot_files">#</a> <i>plot</i>.<b>files</b>([<i>files</i>])
 
 If _files_ is specified, sets the files to the specified list of strings.
 If _files_ is not specified, returns the current files which defaults to `['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']`.
 
-<a name="plot_ranks" href="plot_ranks">#</a> <i>plot</i>.<b>ranks</b>([<i>ranks</i>])
+<a name="plot_ranks" href="#plot_ranks">#</a> <i>plot</i>.<b>ranks</b>([<i>ranks</i>])
 
 If _ranks_ is specified, sets the ranks to the specified list of strings.
 If _ranks_ is not specified, returns the current ranks which defaults to `['1', '2', '3', '4', '5', '6', '7', '8']`.
 
-<a name="plot_fileStyle" href="plot_fileStyle">#</a> <i>plot</i>.<b>fileStyle</b>([<i>fileStyle</i>])
+<a name="plot_fileStyle" href="#plot_fileStyle">#</a> <i>plot</i>.<b>fileStyle</b>([<i>fileStyle</i>])
 
 If _fileStyle_ is specified, sets the file label style to the specified CSS style.
 If _fileStyle_ is not specified, returns the current file label style which is empty by default.
 
-<a name="plot_rankStyle" href="plot_rankStyle">#</a> <i>plot</i>.<b>rankStyle</b>([<i>rankStyle</i>])
+<a name="plot_rankStyle" href="#plot_rankStyle">#</a> <i>plot</i>.<b>rankStyle</b>([<i>rankStyle</i>])
 
 If _rankStyle_ is specified, sets the rank label style to the specified CSS style.
 If _rankStyle_ is not specified, returns the current rank label style which is empty by default.
@@ -148,18 +148,18 @@ If _rankStyle_ is not specified, returns the current rank label style which is e
 
 ### Fill Colors
 
-<a name="plot_lightSquareFill" href="plot_lightSquareFill">#</a> <i>plot</i>.<b>lightSquareFill</b>([<i>lightSquareFill</i>])
+<a name="plot_lightSquareFill" href="#plot_lightSquareFill">#</a> <i>plot</i>.<b>lightSquareFill</b>([<i>lightSquareFill</i>])
 
 If _lightSquareFill_ is specified, sets the light square fill color to the specified CSS color string.
 If _lightSquareFill_ is not specified, returns the current light square fill color which defaults to `white`.
 
-<a name="plot_darkSquareFill" href="plot_darkSquareFill">#</a> <i>plot</i>.<b>darkSquareFill</b>([<i>darkSquareFill</i>])
+<a name="plot_darkSquareFill" href="#plot_darkSquareFill">#</a> <i>plot</i>.<b>darkSquareFill</b>([<i>darkSquareFill</i>])
 
 If _darkSquareFill_ is specified, sets the dark square fill color to the specified CSS color string.
 If _darkSquareFill_ is not specified, returns the current dark square fill color which defaults to `gainsboro`.
 
 
-<a name="plot_circleFill" href="plot_circleFill">#</a> <i>plot</i>.<b>circleFill</b>([<i>circleFill</i>])
+<a name="plot_circleFill" href="#plot_circleFill">#</a> <i>plot</i>.<b>circleFill</b>([<i>circleFill</i>])
 
 If _circleFill_ is specified, sets the circle fill color to the specified CSS color string.
 If _circleFill_ is not specified, returns the current circle fill color which defaults to `nero`.
