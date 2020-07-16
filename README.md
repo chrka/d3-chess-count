@@ -6,6 +6,8 @@ the highest overall frequency takes up the full space of its square minus paddin
 
 <img src="https://github.com/chrka/d3-chessboard-count/raw/master/img/board.png" alt="example board image" width="296px" height="296px"></img>
 
+For an example of the plug-in in action, see this [notebook](https://observablehq.com/@chrka/2016-crazyhouse-championship-drop-and-capture-statistics).
+
 Changes to the data are animated, and the board can be customized, including:
 
 * the size of the squares,
