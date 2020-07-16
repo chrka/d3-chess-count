@@ -30,8 +30,11 @@ export interface ChessboardSquarePlot<Datum> {
   padding(): number;
   padding(newPadding: number): this;
 
-  notationPadding(): number;
-  notationPadding(newPadding: number): this;
+  fileNotationPadding(): number;
+  fileNotationPadding(newPadding: number): this;
+
+  rankNotationPadding(): number;
+  rankNotationPadding(newPadding: number): this;
 
   mirrorFiles(): boolean;
   mirrorFiles(newMirrorFiles: boolean): this;
@@ -111,7 +114,8 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
   let margins: Margins = {top: 24, left: 24, bottom: 24, right: 24};
   let squareSize = 32;
   let padding = 4;
-  let notationPadding = 6;
+  let fileNotationPadding = 6;
+  let rankNotationPadding = 6;
 
   let mirrorFiles = false;
   let mirrorRanks = false;
@@ -215,10 +219,10 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
         .padding(0.5);
 
       fileAxis
-        .tickSize(notationPadding);
+        .tickSize(fileNotationPadding);
 
       rankAxis
-        .tickSize(notationPadding);
+        .tickSize(rankNotationPadding);
 
       // Statistics for scaling and tooltips
       const maxCount = max(data.map(count));
@@ -392,20 +396,29 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
     }
   };
 
-  squarePlot.notationPadding = (newPadding?: number): any => {
-    if (newPadding === undefined) {
-      return notationPadding;
-    } else {
-      notationPadding = newPadding;
-      return squarePlot;
-    }
-  };
-
   squarePlot.padding = (newPadding?: number): any => {
     if (newPadding === undefined) {
       return padding;
     } else {
       padding = newPadding;
+      return squarePlot;
+    }
+  };
+
+  squarePlot.fileNotationPadding = (newFileNotationPadding?: number): any => {
+    if (newFileNotationPadding === undefined) {
+      return fileNotationPadding;
+    } else {
+      fileNotationPadding = newFileNotationPadding;
+      return squarePlot;
+    }
+  };
+
+  squarePlot.rankNotationPadding = (newRankNotationPadding?: number): any => {
+    if (newRankNotationPadding === undefined) {
+      return rankNotationPadding;
+    } else {
+      rankNotationPadding = newRankNotationPadding;
       return squarePlot;
     }
   };
