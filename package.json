@@ -21,8 +21,7 @@
   },
   "license": "MIT",
   "files": [
-    "dist/**/*.js",
-    "src/**/*.ts"
+    "dist/"
   ],
   "main": "dist/d3-chessboard-count.js",
   "unpkg": "dist/d3-chessboard-count.min.js",
@@ -30,6 +29,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "watch": "rollup -cw"
