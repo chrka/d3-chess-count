@@ -71,6 +71,8 @@ After configuring the plot object, select the `div`, set your data, and apply th
 * [Files and Ranks](#files-and-ranks)
 * [Fill Colors](#fill-colors)
 
+Unless specified otherwise, units are SVG user units.
+
 
 ### Creating Plots
 <a name="chessboardSquarePlot" href="#chessboardSquarePlot">#</a> d3.<b>chessboardSquarePlot</b>() [<>](https://github.com/chrka/d3-chessboard-count/blob/master/src/index.ts#L113 "Source")
@@ -149,20 +151,20 @@ If _rankStyle_ is not specified, returns the current rank label style which is e
 
 <a name="plot_fileNotationPadding" href="#plot_fileNotationPadding">#</a> <i>plot</i>.<b>fileNotationPadding</b>([<i>fileNotationPadding</i>])
 
-If _fileNotationPadding_ is specified, sets the inner distance between the file labels and the board to the specified number.
+If _fileNotationPadding_ is specified, sets the inner distance between file labels and the board to the specified number.
 If _fileNotationPadding_ is not specified, returns the current distance which defaults to 6.
 
 <a name="plot_rankNotationPadding" href="#plot_rankNotationPadding">#</a> <i>plot</i>.<b>rankNotationPadding</b>([<i>rankNotationPadding</i>])
 
-If _rankNotationPadding_ is specified, sets the inner distance between the rank labels and the board to the specified number.
+If _rankNotationPadding_ is specified, sets the inner distance between rank labels and the board to the specified number.
 If _rankNotationPadding_ is not specified, returns the current distance which defaults to 6.
 
-<a name="plot_mirrorFiles" href="#plot_mirrorFiles">#</a> <i>plot</i>.<b>mirrorFiles()</b>([<i>mirrorFiles</i>])
+<a name="plot_mirrorFiles" href="#plot_mirrorFiles">#</a> <i>plot</i>.<b>mirrorFiles</b>([<i>mirrorFiles</i>])
 
 If _mirrorFiles_ is specified, mirror the board along the files if true.
 If _mirrorFiles_ is not specified, returns the current state of the mirroring.
 
-<a name="plot_mirrorRanks" href="#plot_mirrorRanks">#</a> <i>plot</i>.<b>mirrorRanks()</b>([<i>mirrorRanks</i>])
+<a name="plot_mirrorRanks" href="#plot_mirrorRanks">#</a> <i>plot</i>.<b>mirrorRanks</b>([<i>mirrorRanks</i>])
 
 If _mirrorRanks_ is specified, mirror the board along the ranks if true.
 If _mirrorRanks_ is not specified, returns the current state of the mirroring.
