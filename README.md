@@ -145,6 +145,17 @@ If _fileStyle_ is not specified, returns the current file label style which is e
 If _rankStyle_ is specified, sets the rank label style to the specified CSS style.
 If _rankStyle_ is not specified, returns the current rank label style which is empty by default.
 
+<a name="plot_mirrorFiles" href="#plot_mirrorFiles">#</a> <i>plot</i>.<b>mirrorFiles()</b>([<i>mirrorFiles</i>])
+
+If _mirrorFiles_ is specified, mirror the board along the files if true.
+If _mirrorFiles_ is not specified, returns the current state of the mirroring.
+
+<a name="plot_mirrorRanks" href="#plot_mirrorRanks">#</a> <i>plot</i>.<b>mirrorRanks()</b>([<i>mirrorRanks</i>])
+
+If _mirrorRanks_ is specified, mirror the board along the ranks if true.
+If _mirrorRanks_ is not specified, returns the current state of the mirroring.
+To rotate the board, mirror along both files and ranks.
+
 
 ### Fill Colors
 
