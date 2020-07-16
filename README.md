@@ -73,7 +73,7 @@ After configuring the plot object, select the `div`, set your data, and apply th
 
 
 ### Creating Plots
-<a name="chessboardSquarePlot" href="#chessboardSquarePlot">#</a> d3.<b>chessboardSquarePlot</b>() [<>](https://github.com/chrka/d3-chessboard-count/blob/master/src/index.ts#L107 "Source")
+<a name="chessboardSquarePlot" href="#chessboardSquarePlot">#</a> d3.<b>chessboardSquarePlot</b>() [<>](https://github.com/chrka/d3-chessboard-count/blob/master/src/index.ts#L113 "Source")
 
 Constructs a new plot with top/right/bottom/left margins of 24, square size of 32,
 padding of 4, no mirroring, 8 files and ranks ('a'–'h', '1'–'8'), `white` light squares,
@@ -146,6 +146,16 @@ If _fileStyle_ is not specified, returns the current file label style which is e
 
 If _rankStyle_ is specified, sets the rank label style to the specified CSS style.
 If _rankStyle_ is not specified, returns the current rank label style which is empty by default.
+
+<a name="plot_fileNotationPadding" href="#plot_fileNotationPadding">#</a> <i>plot</i>.<b>fileNotationPadding</b>([<i>fileNotationPadding</i>])
+
+If _fileNotationPadding_ is specified, sets the inner distance between the file labels and the board to the specified number.
+If _fileNotationPadding_ is not specified, returns the current distance which defaults to 6.
+
+<a name="plot_rankNotationPadding" href="#plot_rankNotationPadding">#</a> <i>plot</i>.<b>rankNotationPadding</b>([<i>rankNotationPadding</i>])
+
+If _rankNotationPadding_ is specified, sets the inner distance between the rank labels and the board to the specified number.
+If _rankNotationPadding_ is not specified, returns the current distance which defaults to 6.
 
 <a name="plot_mirrorFiles" href="#plot_mirrorFiles">#</a> <i>plot</i>.<b>mirrorFiles()</b>([<i>mirrorFiles</i>])
 
