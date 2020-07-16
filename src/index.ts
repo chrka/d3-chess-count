@@ -30,6 +30,9 @@ export interface ChessboardSquarePlot<Datum> {
   padding(): number;
   padding(newPadding: number): this;
 
+  notationPadding(): number;
+  notationPadding(newPadding: number): this;
+
   mirrorFiles(): boolean;
   mirrorFiles(newMirrorFiles: boolean): this;
 
@@ -108,6 +111,7 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
   let margins: Margins = {top: 24, left: 24, bottom: 24, right: 24};
   let squareSize = 32;
   let padding = 4;
+  let notationPadding = 6;
 
   let mirrorFiles = false;
   let mirrorRanks = false;
@@ -191,7 +195,7 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
       const width = margins.left + numFiles * squareSize + margins.right;
       const height = margins.top + numRanks * squareSize + margins.bottom;
 
-      // Set up scales
+      // Set up scales and axis
       rowScale
         .domain([0, numRanks])
         .range([numRanks * squareSize - 0.5 * squareSize, -0.5 * squareSize]);
@@ -209,6 +213,12 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
         .domain(mirrorRanks ? [...ranks].reverse() : ranks)
         .range([numRanks * squareSize, 0])
         .padding(0.5);
+
+      fileAxis
+        .tickSize(notationPadding);
+
+      rankAxis
+        .tickSize(notationPadding);
 
       // Statistics for scaling and tooltips
       const maxCount = max(data.map(count));
@@ -378,6 +388,15 @@ export function chessboardSquarePlot<Datum>(): ChessboardSquarePlot<Datum> {
       return squareSize;
     } else {
       squareSize = newSquareSize;
+      return squarePlot;
+    }
+  };
+
+  squarePlot.notationPadding = (newPadding?: number): any => {
+    if (newPadding === undefined) {
+      return notationPadding;
+    } else {
+      notationPadding = newPadding;
       return squarePlot;
     }
   };
